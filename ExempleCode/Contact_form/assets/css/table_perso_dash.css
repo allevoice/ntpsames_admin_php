@@ -1,0 +1,22 @@
+.bi_menu_perso {
+    background-color: #073896; /* Bleu Bootstrap Primary */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer; /* Indique que l'élément est cliquable */
+    transition: background-color 0.3s ease; /* Ajoute une transition pour un effet fluide */
+    border-radius: 10px;
+}
+
+/* Style au survol (couleur au passage de la souris) */
+.bi_menu_perso:hover {
+    background-color: #4f7fc1; /* Un bleu légèrement plus foncé pour le survol */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère */
+}
+
+
+  .table-responsive {
+      /* Si la table est enveloppée dans un div responsive */
+      margin-left: auto;
+      margin-right: auto;
+  }

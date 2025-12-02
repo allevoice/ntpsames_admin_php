@@ -1,0 +1,91 @@
+/* Global Header on Scroll
+------------------------------*/
+.scrolled .header {
+    --background-color: var(--accent-color);
+    --default-color: #ffffff;
+    --heading-color: #ffffff;
+    --nav-color: #ffffff;
+}
+
+/* Index Page Header
+------------------------------*/
+.index-page .header {
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --nav-color: #ffffff;
+    font-weight: bold;
+}
+
+/* Index Page Header on Scroll
+------------------------------*/
+.index-page.scrolled .header {
+  --background-color: var(--accent-color);
+    font-weight: bold;
+  --nav-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1199px) {
+    /* Ensures the main container aligns items vertically in the center */
+    .header .container {
+        align-items: center !important;
+    }
+
+    /* Ensures the utility icons are vertically aligned within their container */
+    .mobile-utils {
+        align-items: center !important;
+    }
+
+    /* Force the mobile utilities block to display its content in a specific order. */
+    .mobile-utils {
+        /* This is crucial: the mobile-utils block must come *before* navmenu for the order LOGO...UTILITES...TOGGLE */
+        order: 1;
+    }
+
+    .navmenu {
+        /* The navmenu block (which contains the toggle) must come after the utilities block. */
+        order: 2;
+    }
+
+    /* Ensure the logo is always first */
+    .logo {
+        order: 0;
+    }
+}
+
+
+.flag-icon {
+    /* Assure que l'image ne dépasse pas la taille souhaitée */
+    width: 20px;
+    height: 15px;
+
+    /* Rend l'image en ligne (pour s'aligner avec le texte) et ajoute un petit espace */
+    display: inline-block;
+    margin-right: 8px; /* Ajoute de l'espace entre le drapeau et le nom de la langue */
+
+    /* Options d'affichage si nécessaire (pour un aspect plus net) */
+    object-fit: cover;
+    border: 1px solid #ccc; /* Bordure subtile pour les drapeaux clairs */
+    vertical-align: middle; /* Alignement vertical pour centrer avec le texte */
+}
+
+/* Vous pouvez ajouter un effet au survol si vous le souhaitez */
+.dropdown-item:hover .flag-icon {
+    opacity: 0.9;
+}
