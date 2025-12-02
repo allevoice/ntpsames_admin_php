@@ -1,0 +1,52 @@
+# ----------------------------------------
+# 1. Dossiers et Fichiers de Compilation/Build
+# ----------------------------------------
+build/
+dist/
+target/
+bin/
+*.o
+*.obj
+*.out
+*.log
+*.class
+__pycache__/
+*.pyc
+
+# ----------------------------------------
+# 2. Dépendances et Modules
+# ----------------------------------------
+node_modules/
+vendor/
+
+# ----------------------------------------
+# 3. Fichiers d'Environnement et de Configuration Locale/Sécurisée
+# ----------------------------------------
+.env
+.env.*.local
+*.local
+*.secret
+*.key
+*.pem
+*.sqlite
+*.db
+
+# ----------------------------------------
+# 4. Fichiers Spécifiques aux IDE et OS
+# ----------------------------------------
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+# (Retirez la ligne .vscode/ si vous voulez partager les launch settings)
+
+# JetBrains/IntelliJ
+.idea/
+
+# Vim/autres
+*~
+*.swp
